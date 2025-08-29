@@ -1,1 +1,2 @@
 # antdrop-assets
+Bnb Chain
