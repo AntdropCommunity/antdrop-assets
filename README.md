@@ -29,9 +29,6 @@ frontend/ → Vite + React (UI)
 backend/ → Node.js + Express (REST API)
 contracts/ → Solidity (Hardhat or Foundry)
 
-yaml
-Kodu kopyala
-
 ---
 
 ## Quick Start
@@ -51,43 +48,22 @@ npm install
 cp .env.example .env
 npm run dev
 npm run build
-2) Backend
-bash
-Kodu kopyala
+
+### 1) Backend
+
+```bash
 cd backend
 npm install
 cp .env.example .env
 npm run dev     # or node server.js
-3) Contracts (Hardhat example)
-bash
-Kodu kopyala
+
+###Contracts (Hardhat example)
+
+```bash
 cd contracts
 npm install
 cp .env.example .env
 npx hardhat compile
 npx hardhat test
 npx hardhat run scripts/deploy.js --network bscTestnet
-Configuration
-Frontend .env.example
-bash
-Kodu kopyala
-VITE_API_URL=http://localhost:3001
-VITE_BSC_CHAIN_ID=0x61   # 0x38 mainnet, 0x61 testnet
-VITE_WALLETCONNECT_PROJECT_ID=your_wc_project_id
-Backend .env.example
-bash
-Kodu kopyala
-PORT=3001
-CORS_ORIGINS=http://localhost:5173,https://antdrop.io,https://www.antdrop.io
-DB_CLIENT=sqlite
-DB_URL=./antdrop.db
-BSCSCAN_API_KEY=your_bscscan_key
-MORALIS_API_KEY=optional
-AIRDROP_DURATION_DAYS=7
-AIRDROP_PARTICIPANT_CAP=5000
-Contracts .env.example
-bash
-Kodu kopyala
-PRIVATE_KEY=0xabc...
-BSC_RPC=https://bsc-dataseed.binance.org
-BSCSCAN_API_KEY=your_bscscan_key
+
