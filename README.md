@@ -66,4 +66,3 @@ cp .env.example .env
 npx hardhat compile
 npx hardhat test
 npx hardhat run scripts/deploy.js --network bscTestnet
-
