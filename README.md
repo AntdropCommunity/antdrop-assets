@@ -49,7 +49,7 @@ cp .env.example .env
 npm run dev
 npm run build
 
-### 1) Backend
+### 2) Backend
 
 ```bash
 cd backend
@@ -57,7 +57,7 @@ npm install
 cp .env.example .env
 npm run dev     # or node server.js
 
-###Contracts (Hardhat example)
+### 3) Contracts (Hardhat example)
 
 ```bash
 cd contracts
